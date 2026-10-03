@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f2600c">
+<title>食材管家 · 今日吃啥</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A5%95%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css?v=1.3.6e">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-logo">🥕</span>
+    <span class="brand-name">食材管家</span>
+    <span class="brand-sub">今日吃啥</span>
+  </div>
+  <nav class="nav-tabs">
+    <button class="tabbtn" data-action="tab" data-tab="recommend">🍳 推荐</button>
+    <button class="tabbtn" data-action="tab" data-tab="pantry">🥕 食材</button>
+    <button class="tabbtn" data-action="tab" data-tab="recipes">📖 菜谱</button>
+    <button class="tabbtn" data-action="tab" data-tab="settings">⚙️ 设置</button>
+  </nav>
+</header>
+
+<main id="main" class="container"></main>
+
+<nav class="tabbar">
+  <button class="tabbtn" data-action="tab" data-tab="recommend"><span>🍳</span>推荐</button>
+  <button class="tabbtn" data-action="tab" data-tab="pantry"><span>🥕</span>食材</button>
+  <button class="tabbtn" data-action="tab" data-tab="recipes"><span>📖</span>菜谱</button>
+  <button class="tabbtn" data-action="tab" data-tab="settings"><span>⚙️</span>设置</button>
+</nav>
+
+
+<div id="modalRoot"></div>
+<div id="toastRoot" class="toast-wrap"></div>
+<div id="suggestBox" class="suggest-box" style="display:none"></div>
+
+<datalist id="dl-ingredients"></datalist>
+<datalist id="dl-units"></datalist>
+
+<script src="js/data.js?v=1.3.6"></script>
+<script src="js/recommend.js?v=1.3.6"></script>
+<script src="js/app.js?v=1.3.6"></script>
+</body>
+</html>
